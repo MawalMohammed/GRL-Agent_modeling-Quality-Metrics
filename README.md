@@ -45,6 +45,6 @@ Second way:
             Select metrics to compute and close
      
       (3) Go to the main editor and click on the histogram button. This button can be found in:
-            (1) The jUCMNav labeled as "GRL Bad Smell Detector"
+            (1) The jUCMNav labeled as "GRL Agent Modeling Quality Metrics"
             (2) In the toolbar
-            (3) Dropdown menu associated with jUCMNav in the Navigator
+            (3) Dropdown menu associated with jUCMNav files in the Navigator
