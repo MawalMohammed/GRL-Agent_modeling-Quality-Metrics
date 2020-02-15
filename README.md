@@ -1,5 +1,5 @@
 # GRL-Agent_modeling-Quality-Metrics
-A metric suite for assessing the quality of agents modeling in GRL models
+An Elcipse Plugin to calculate metrics for assessing the quality of agents modeling in GRL models
 
 *Important notes:
 
