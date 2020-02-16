@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            id="org.eclipse.jucmnav.grl.QAMM.editorContribution1"
+            targetID="seg.jUCMNav.MainEditor">
+         <menu
+               id="seg.jUCMNav"
+               label="jUCMNav">
+            <separator
+                  name="ext">
+            </separator>
+         </menu>
+         <action
+               class="org.eclipse.jucmnav.grl.QAMM.GRLMetricsCalculationEngine"
+               icon="icons/icon.png"
+               id="org.eclipse.jucmnav.grl.QAMM.action1"
+               label="GRL Agent Modeling Quality Metrics "
+               menubarPath="seg.jUCMNav/ext"
+               style="push"
+               toolbarPath="jUCMNav">
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="org.eclipse.jucmnav.grl.QAMM.objectContribution1"
+            nameFilter="*.jucm"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="org.eclipse.jucmnav.grl.QAMM.GRLMetricsCalculationEngine"
+               icon="icons/icon.png"
+               id="org.eclipse.jucmnav.grl.QAMM.action1"
+               label="GRL Agent Modeling Quality Metrics "
+               menubarPath="additions">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="seg.jUCMNav.views.preferences.GeneralPreferencePage"
+            class="org.eclipse.jucmnav.grl.QAMM.QAMMPreferences"
+            id="org.eclipse.jucmnav.grl.QAMM.page1"
+            name="GRL Agent Modeling Quality Metrics Preferences">
+      </page>
+   </extension>
+   <extension
+         id="org.eclipse.jucmnav.grl.QAMM.MetricsMarker"
+         name="QAMMMarker"
+         point="org.eclipse.core.resources.markers">
+      <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <super
+            type="org.eclipse.core.resources.marker">
+      </super>
+      <attribute
+            name="sourceType">
+      </attribute>
+      <attribute
+            name="Metrics">
+      </attribute>
+      <attribute
+            name="sourceName">
+      </attribute>
+   </extension>
+
+</plugin>
