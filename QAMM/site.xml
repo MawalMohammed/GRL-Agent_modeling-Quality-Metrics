@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <description name="QAMM">
-      An Eclipse plugin to Calculate GRL Agent Modeling Quality Metrics
-   </description>
-   <feature url="features/GRLQAMM_1.0.0.202002160254.jar" id="GRLQAMM" version="1.0.0.202002160254"/>
-</site>
